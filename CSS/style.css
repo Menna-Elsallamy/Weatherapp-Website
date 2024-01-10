@@ -1,0 +1,84 @@
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+.site-title {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-size: 1.1428571429em;
+    color: white;
+}
+.site-description {
+    font-size: 10px;
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+
+}
+#navbarSupportedContent > ul > li.nav-item.menu-item.current-menu-item > a{
+    border-color: #009ad8;
+    color: #009ad8;
+    padding: 5px 25px;
+    border: 2px solid #009ad8 ;
+    border-radius: 30px;
+}
+.menu-item a {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+.menu-item:hover a {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+.hero{
+    background-image: url(../pictures/banner.png);
+    background-position: center center;
+    background-size: cover;
+}
+.pos{
+    top: 10%;
+    left: 93%;
+}
+.forecast-container {
+    width: 100%;
+    background: #323544;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;}
+.forecast-container .forecast .forecast-header {
+        background: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        text-align: center;
+        font-weight: 400;
+}
+
+ body {
+        padding-top: 100px; 
+ }
+
+.posi{
+        top: 33%;
+        left: 40%;
+ }
+
+ .circle
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(26, 26, 85);
+}

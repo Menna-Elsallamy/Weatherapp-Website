@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <div>
+        <div class="hero py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="position-relative">
+                            <div class="">
+                                <input type="text" class="form-control rounded-5 w-100 py-3" id="location"
+                                    placeholder="Find your location" />
+
+                            </div>
+                            <button class="btn btn-primary position-absolute top-0 mt-2 end-0 me-2">Find</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row mt-3 py-5">
+                <div class="col-md-4 bg-dark py-5 border border-2 border-primary">
+                    <div class="d-flex justify-content-between">
+                        <p id="todayname">Tuesday</p>
+                        <div  class="d-flex"><span id="daynumber">2</span>
+                        <p id="todaymonth"></p></div>
+                        
+                    </div>
+                    <div id="infoo">
+                        <h2 id="todaylocation">cairo</h2>
+                        <div class="d-flex justify-content-between">
+                            <h3 id="todaytemp">5C
+                               
+                            </h3>
+                            <div id="todayconditionimage"></div>
+                        </div>
+                        <h4 id="todayconditiontext">rainy</h4>
+                    </div>
+
+
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center me-5">
+                            <img class="w-auto fs-1" src="./pictures/icon-umberella.png">
+                            <p id="humidity" class="p-0 m-0">20%</p>
+                        </div>
+                        <div class="d-flex align-items-center me-5">
+                            <img class="w-auto fs-1" src="./pictures/icon-wind.png">
+                            <p id="wind" class="p-0 m-0">18 km/hr%</p>
+                        </div>
+                        <div class="d-flex align-items-center me-5">
+                            <img class="w-auto fs-1" src="./pictures/icon-compass.png">
+                            <p id="winddirection" class="p-0 m-0">east</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 bg-dark py-5 border border-2 border-primary">
+                    <p id="" class="text-center nextdayname"></p>
+                    <div class="text-center">
+                        <div id="nextdayconditionimg">
+                            </div>
+                        
+                        <p class="nextdaymaxtemp" id="">20.5C</p>
+                        <p class="nextdaymintemp" id="">13.3</p>
+                        <p  id="" class="text-primary nxtdayconditionsearch">Overcast</p>
+                    </div>
+                </div>
+                <div class="col-md-4 bg-dark py-5 border border-2 border-primary">
+                    <p class="text-center nextdayname"></p>
+                    <div class="text-center">
+                        <div id="daytwoconditionimg"></div>
+                       
+                        <p class="nextdaymaxtemp">21.3C</p>
+                        <p class="nextdaymintemp">13.7</p>
+                        <p class="text-primary nxtdayconditionsearch">sunny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-black">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-8">
+
+                        <div class="position-relative">
+                            <div class="">
+                                <input class="form-control w-100  mb-3 rounded-5 py-3"
+                                    placeholder="enter your email to subscribe" />
+                            </div>
+                            <button class="btn btn-primary position-absolute top-0 mt-2 end-0 me-2">subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="icons d-flex">
+                            <div class="circle d-flex justify-content-center align-items-center me-1">
+                                <i class="fa-brands fa-facebook fs-3"></i>
+                            </div>
+                            <div class="circle d-flex justify-content-center align-items-center me-1">
+                                <i class="fa-brands fa-twitter fs-3">
+                                    <a href=""></a>
+                                </i>
+                            </div>
+                            <div class="circle d-flex justify-content-center align-items-center me-1">
+                                <i class="fa-brands fa-pinterest fs-3">
+                                    <a href=""></a>
+                                </i>
+
+                            </div>
+                            <div class="circle d-flex justify-content-center align-items-center me-1">
+                                <i class="fa-brands fa-linkedin fs-3">
+                                    <a href=""></a>
+                                </i>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <p class="p-0 m-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <div id="forecast">
+
+    </div>
+    <!-- NAVBAR -->
+    <navbar>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex" href="#">
+                    <img src="./pictures/logo.png" alt="logo">
+                    <span class="logo-type">
+                        <h1 class="site-title">Weather</h1>
+                        <small class="site-description">Tagline goes here</small>
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item menu-item current-menu-item">
+                            <a class="nav-link me-2" href="#">Home</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link me-2" href="#">News</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link me-2" href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link me-2" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link me-2" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </navbar>
+    <!-- NAVBAR -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
